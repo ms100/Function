@@ -7,10 +7,7 @@
  * @return string
  */
 function captcha($width, $height, $char_num){
-    //$width = 140;
-    //$height = 36;
-    //$num = 6;
-    if(!file_exists($font = SHAREDPATH . 'third_party/fonts/arialbd.ttf')){
+    if(!file_exists($font = './arialbd.ttf')){
         exit;
     }
 
