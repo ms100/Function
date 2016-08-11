@@ -6,7 +6,7 @@
  * @param $char_num 字符数量
  * @return string
  */
-function captcha($width, $height, $char_num){
+function captcha($width = 140, $height = 40, $char_num = 4){
     if(!file_exists($font = './arialbd.ttf')){
         exit;
     }
